@@ -31,12 +31,11 @@ function calculator_js(){
     function sanitize_eqn(eqn){
         pi_regex = /\d+π/g;
         var safe = eqn.replace(pi_regex, function(match) {return match.split("π")[0]+`*π`;});;
-        console.log(safe);
         safe = eqn.replaceAll("×", "*");
         safe = eqn.replaceAll("÷", "/");
         safe = eqn.replaceAll("π", math.PI);
         
-        //return safe
+        return safe
     }
     document.getElementById("solve").addEventListener("click", function(){
         try{
@@ -46,7 +45,7 @@ function calculator_js(){
         }
         var eqn = question_div.innerHTML;
         safe = sanitize_eqn(eqn);
-        //answer_div.innerText = math.evaluate(safe);
+        answer_div.innerText = math.evaluate(safe);
         }
         catch(err){
             if (err.name == 'SyntaxError')
