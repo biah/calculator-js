@@ -55,4 +55,5 @@ function calculator_js(){
         }
     })
 }
+
 window.onload = (calculator_js());
