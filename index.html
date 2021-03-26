@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="calculator_js.css">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Calculator JS</title>
+</head>
+<body>
+    <div id="cal-body">
+        <div id="cal-screen">
+            <div id="cal-question"></div>
+            <div id="cal-answer"></div>
+        </div>
+        <div id="cal-btns">
+            <div id="options"></div>
+            <div class="cal-row">
+                <div class="cal-btn cal-symbol">&pi;</div>
+                <div class="cal-btn cal-symbol">!</div>
+                <div class="cal-btn cal-delete-btns" id="delete-all">AC</div>
+                <div class="cal-btn cal-delete-btns" id="delete">DEL</div>
+                
+            </div>
+            <div class="cal-row">                
+                <div class="cal-btn cal-symbol">(</div>
+                <div class="cal-btn cal-symbol">)</div>
+                <div class="cal-btn cal-symbol">%</div>
+                <div class="cal-btn operation">-</div>
+            </div>
+            <div class="cal-row">
+                <div class="cal-btn cal-number">7</div>
+                <div class="cal-btn cal-number">8</div>
+                <div class="cal-btn cal-number">9</div>
+                <div class="cal-btn operation">&#247;</div>
+            </div>
+            <div class="cal-row">
+                <div class="cal-btn cal-number">4</div>
+                <div class="cal-btn cal-number">5</div>
+                <div class="cal-btn cal-number">6</div>
+                <div class="cal-btn operation">&#215;</div>
+                
+
+            </div>
+            <div class="cal-row">
+                <div class="cal-btn cal-number">1</div>
+                <div class="cal-btn cal-number">2</div>
+                <div class="cal-btn cal-number">3</div>
+                <div class="cal-btn operation">+</div>
+            </div>
+            <div class="cal-row">
+                <div class="cal-btn cal-number">0</div>
+                <div class="cal-btn cal-symbol">.</div>
+                <div class="cal-btn cal-special">Ans</div>
+                <div class="cal-btn" id="solve">=</div>
+            </div>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.0/math.min.js" integrity="sha512-pRkiEK307FcdaOBL0UjEh6i+AZTq+utCsISMzSHV6x2YvXpVKTyV7MK28mJ0YGwqZgX/KtRiaciWLkILU9iUkA==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="calculator_js.js"></script>
+</body>
+</html>

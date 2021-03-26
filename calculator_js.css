@@ -1,0 +1,99 @@
+* {
+  font-family: sans-serif;
+}
+
+.operation {
+  background-color: #17641D !important;
+}
+
+#cal-body {
+  background-color: black;
+  padding: 10px;
+  width: 90%;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+#cal-btns {
+  padding-top: 1px;
+  border-radius: 5px;
+  color: white;
+}
+
+.cal-delete-btns {
+  background-color: #FF7162 !important;
+}
+
+#options {
+  background-color: orange;
+  padding: 5px;
+  margin: auto;
+  width: 100%;
+  border-radius: 1px;
+  box-sizing: border-box;
+}
+
+#cal-screen {
+  background-color: #D4D4D4;
+  padding: 40px;
+  width: 100%;
+  margin: 0px 0px 1px 0px;
+  border-radius: 5px 5px 0px 0px;
+  box-sizing: border-box;
+}
+#cal-screen #cal-question {
+  font-size: 40px;
+}
+
+.cal-row {
+  display: flex;
+  margin: 2px;
+}
+.cal-row .cal-btn {
+  border-radius: 5px;
+  width: 30%;
+  height: 20px;
+  padding: 20px 30px 20px 30px;
+  text-align: center;
+  margin: 1px;
+  font-size: 20px;
+  background-color: #8888;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  #cal-body {
+    width: 100%;
+  }
+
+  .cal-row .cal-btn {
+    padding: 25px 25px 25px 25px;
+  }
+}
+@media (max-width: 320px) {
+  .cal-row .cal-btn {
+    padding: 25px 20px 25px 20px;
+  }
+}
+@media (max-width: 280px) {
+  .cal-row .cal-btn {
+    padding: 25px 15px 25px 15px;
+  }
+}
+@media (max-width: 240px) {
+  .cal-row .cal-btn {
+    padding: 25px 10px 25px 10px;
+  }
+}
+@media (max-width: 200px) {
+  .cal-row .cal-btn {
+    padding: 25px 5px 25px 5px;
+  }
+}
+@media (max-width: 160px) {
+  .cal-row .cal-btn {
+    padding: 25px 0px 25px 0px;
+  }
+}
+
+/*# sourceMappingURL=calculator_js.css.map */
